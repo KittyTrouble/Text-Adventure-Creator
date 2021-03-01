@@ -6,8 +6,13 @@ namespace Text_Adventure
     {
         static void Main(string[] args)
         {
-            Console.WriteLine("Hello World!");
-            Console.ReadLine();
+            while (true)
+            {
+                Console.Clear();
+                Room testRoom = new Room("Test room", "You are in an unfinished room.");
+                Console.WriteLine(testRoom);
+                Console.ReadLine();
+            }
         }
     }
-}
+}   
